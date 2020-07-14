@@ -7,5 +7,5 @@ http://www.iwaz.co.kr
   - json 파일 csv 파일로 변환 프로그램    
   - ner (개체명 인식) 태깅 작업  
 
-참고:  
+참고)  
 [깃블로그에 추가 설명을 업로드 하였습니다.](https://uni2237.github.io/categories/work/)
