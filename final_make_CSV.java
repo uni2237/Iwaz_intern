@@ -15,7 +15,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class make_CSV {
+public class final_make_CSV {
 	public static void main(String args[]) throws ParseException {
 
 		String path_1 = "c:\\csvdata\\";
