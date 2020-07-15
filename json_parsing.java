@@ -8,7 +8,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.*;
 
-public class news_num {
+public class json_parsing {
    public static void main(String[] args) {
       JSONParser jsonParser = new JSONParser();
 
