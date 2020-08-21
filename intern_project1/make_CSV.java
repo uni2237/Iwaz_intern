@@ -12,7 +12,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class make_CSV {
+public class make_CSV { 
    static String[] a = new String[100];
 
    public static void main(String args[]) {
