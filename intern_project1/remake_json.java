@@ -30,7 +30,7 @@ public class remake_json {
                a[m] = a[m] + ',';
             }
 
-         }
+         } 
       }
       try (FileWriter fout = new FileWriter("c:\\csvdata\\2020-01-01.json")) {
          PrintWriter out = new PrintWriter(fout);
