@@ -1,21 +1,31 @@
+# file name : dbModule.py
+# pwd : /project_name/app/module/dbModule.py
+
 import pymysql
 
-db = pymysql.connect(host='192.168.0.102',
-                     port=3306,
-                     user='cnu',
-                     passwd='cnu123',
-                     db='ner_core_tagging_intern',
-                     charset='utf8')
-try:
-    with db.cursor() as cursor:
-        sql = """
-            select NER_CNTNTS, count(*) from ner_ner_info
-            where USE_AT='y' and NER_TYPE='EVT'
-            group by NER_CNTNTS 
-            order by count(*) DESC;
-        """
-        cursor.execute(sql)
-        result = cursor.fetchall()
-        print(result)
-finally:
-    db.close()
+
+class Database():
+    def __init__(self):
+        self.db = pymysql.connect(host='192.168.0.102',
+                                  user='cnu',
+                                  password='cnu123',
+                                  db='ner_core_tagging_intern',
+                                  charset='utf8')
+        self.cursor = self.db.cursor(pymysql.cursors.DictCursor)
+
+    def execute(self, query, args={}):
+        self.cursor.execute(query, args)
+
+    def executeOne(self, query, args={}):
+        self.cursor.execute(query, args)
+        row = self.cursor.fetchone()
+        return row
+
+    def executeAll(self, query, args={}):
+        self.cursor.execute(query, args)
+        row = self.cursor.fetchall()
+        return row
+
+    def commit(self):
+        self.db.commit()
+
