@@ -17,22 +17,23 @@
   </component>
   <component name="ProjectId" id="1gLSQdiXbnHCXjBWrSBrp98eVna" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/test/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/evt" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\static" />
       <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates\test" />
       <recent name="C:\Users\pmcsh\Desktop\iwaz\app\test" />
       <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates\main" />
       <recent name="C:\Users\pmcsh\Desktop\iwaz\app\static\css\image" />
-      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates\test\image" />
-      <recent name="C:\Users\pmcsh\Desktop\iwaz" />
-      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates\test" />
-      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\test" />
+      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates\evt" />
+      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates\month_four" />
+      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates\month_one" />
+      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates\month_three" />
+      <recent name="C:\Users\pmcsh\Desktop\iwaz\app\templates\month_two" />
     </key>
   </component>
   <component name="RunDashboard">
