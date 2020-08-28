@@ -21,7 +21,6 @@ from app.templates.month_four.test import four as four
 app.register_blueprint(main)# as main으로 설정해주었으므로
 
 app.register_blueprint(trm)
-# 여기까지는 된다.
 app.register_blueprint(evt)
 
 app.register_blueprint(one)

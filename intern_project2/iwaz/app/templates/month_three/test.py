@@ -15,14 +15,20 @@ from app.templates.main.index import string_month_three
 
 three = Blueprint('three', __name__, url_prefix='/')
 
-wordcloud = WordCloud(font_path='font/H2GTRE.TTF', background_color='white').generate(string_month_three)
-plt.figure(figsize=(22, 22))  # 이미지 사이즈 지정
-plt.imshow(wordcloud, interpolation='lanczos')  # 이미지의 부드럽기 정도
+from PIL import Image
+from app.templates.main.index import string_month_three,news_three
+import numpy as np
+
+dalong=np.array(Image.open("./static/fonts/dalong.jpg"))
+wordcloud = WordCloud(font_path='font/H2GTRE.TTF', background_color='white',width=650,height=650,mask=dalong).generate(string_month_three)
+plt.figure(figsize=(12, 12))  # 이미지 사이즈 지정
+plt.imshow(wordcloud, interpolation='None')  # 이미지의 부드럽기 정도
 plt.axis('off')  # x y 축 숫자 제거
+plt.tight_layout(pad=0)
 # plt.show()
 plt.savefig('./static/fig5.jpg', dpi=300)
 
 @three.route('/three', methods=['GET'])
 def index(): # 여기에서 이미지를 만들어야한다.
 
-        return render_template('/month_three/test.html')
+        return render_template('/month_three/test.html',p = news_three)

@@ -42,11 +42,13 @@ try:
         print(string) # string 배열 완성
 
         wordcloud = WordCloud(font_path='font/H2GTRE.TTF', background_color='white').generate(string)
+
         plt.figure(figsize=(22, 22))  # 이미지 사이즈 지정
         plt.imshow(wordcloud, interpolation='lanczos')  # 이미지의 부드럽기 정도
+
         plt.axis('off')  # x y 축 숫자 제거
-        #plt.show()
-        plt.savefig('fig1.jpg', dpi=300)
+        plt.show()
+        #plt.savefig('fig1.jpg', dpi=300)
 
 finally:
     db.close()

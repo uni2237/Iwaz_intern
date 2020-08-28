@@ -6,8 +6,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://user-images.githubusercontent.com/26339800/91143906-342a1700-e6ee-11ea-9414-5983c43314cf.JPG">
 
+    <!-- 아이콘 -->
+    <link rel="icon" href="https://user-images.githubusercontent.com/26339800/91143906-342a1700-e6ee-11ea-9414-5983c43314cf.JPG">
+    <!-- 제목 -->
     <title>test.html</title>
 
     <!-- Bootstrap core CSS -->
@@ -34,30 +36,30 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar">111111111111111</span>
+            <span class="icon-bar">22222222222</span>
+            <span class="icon-bar">3333333333333333333333333</span>
           </button>
           <a class="navbar-brand" href="http://bootstrapk.com/examples/starter-template/#">NER Tagging</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="main">Home</a></li>
-            <li><a href="test">Word cloud</a></li>
-            <li><a href="http://bootstrapk.com/examples/starter-template/#contact">Contact</a></li>
+            <li class="active"><a href="main">Main</a></li>
+            <!--<li><a href="test">Word cloud</a></li>-->
+            <!--<li><a href="http://bootstrapk.com/examples/starter-template/#contact">Contact</a></li>-->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-
       <div class="starter-template">
-        <h1>Iwaz Intern Project</h1>
-        <p class="lead">4월 워드클라우드를 보여드리겠습니다. <br>
-            <img src="{{url_for('static', filename='fig6.jpg')}}" alt="워드클라우드 이미지" width = 1000 height=1000>
+        <h1>4월의 WordCloud + 기사 </h1>
+          <h2> 4월의 WordCloud 입니다.</h2>
+        <p class="lead"> <img src="{{url_for('static', filename='fig6.jpg')}}" alt="워드클라우드 이미지" width = 1000 height= 800> <br>
+          <h2> 4월의 기사 입니다.</h2>
+          <pre>{{p}}</pre>
       </div>
-
     </div><!-- /.container -->
 
 
@@ -69,5 +71,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./Starter Template for Bootstrap_files/ie10-viewport-bug-workaround.js.다운로드"></script>
 
-
+    <script>
+        function nl2br(str){  return str.replace(/\n/g, "<br>");  }
+    </script>
 </body></html>
